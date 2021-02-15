@@ -11,12 +11,7 @@ export default function Skills() {
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
-          <div className="skills-image-div">
-            <img
-              alt="Saad Working"
-              src={require("../../assets/images/developerActivity.svg")}
-            ></img>
-          </div>
+          <div className="skills-image-div"></div>
         </Fade>
         <Fade right duration={1000}>
           <div className="skills-text-div">
@@ -36,7 +31,7 @@ export default function Skills() {
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills) => {
+              {skillsSection.skills.map((skill) => {
                 return (
                   <p
                     className={
@@ -45,12 +40,8 @@ export default function Skills() {
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
-                    <a
-                      href="https://vivero.vercel.app/home"
-                      //  target="_blank"
-                    >
-                      E-commerce
+                    <a href={skill.link} target="_blank">
+                      {skill.name}
                     </a>
                   </p>
                 );
