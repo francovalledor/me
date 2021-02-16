@@ -320,7 +320,7 @@ const contactInfo = {
 
 //Twitter Section
 const twitterDetails = {
-  userName: "MorenGer_" //Replace "twitter" with your twitter username without @
+  userName: "francovalledor" //Replace "twitter" with your twitter username without @
 };
 
 export {
